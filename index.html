@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CellMachine</title>
+	</head>
+</html>
+
+<style>
+	* {
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none; 
+	}
+	button {
+		position: relative;
+		vertical-align: top;
+		width: 20%;
+		height: 60px;
+		padding: 0;
+		font-size: 22px;
+		color:white;
+		text-align: center;
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+		background: #454545;
+		border: 0;
+		border-bottom: 2px solid #2f2e2e;
+		cursor: pointer;
+		-webkit-box-shadow: inset 0 -2px #2f2e2e;
+		box-shadow: inset 0 -2px #2f2e2e;
+		outline: none;
+	}
+	button:active {
+		top: 1px;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+	.
+</style>
+
+<body style="text-align: center">
+	<div id="container"></div><p>
+	<button id="0" onclick="setBrush(0)">Grass</button>
+	<button id="1" onclick="setBrush(1)">Droid</button>
+	<button id="2" onclick="setBrush(2)">Jedi</button>
+	<button id="control" onclick="start()">Start</button>
+	<div style="width: 400px; height: 400px; display: inline-block">
+		<canvas id="chart" width="100" height="100"></canvas>
+	</div>
+	<div style="width: 400px; height: 400px; display: inline-block">
+		<canvas id="chart1" width="100" height="100"></canvas>
+	</div>
+</body>
+
+<script src="Chart.js"></script>
+<script src="../CellMachine/CellMachine.js"></script>
+<script src="alg.js"></script>

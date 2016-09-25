@@ -1,0 +1,70 @@
+* {
+	font-family: Tahoma;
+	-moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;  
+}
+
+body {
+	margin: 0;
+	text-align: center;
+}
+
+@keyframes button-hover {
+    from {background-color: #57b13b;}
+    to {background-color: #404040;}
+}
+
+button {
+	user-select: none;
+	width: 40%;
+	background-color: #57b13b;
+	color: white;
+	border: none;
+	padding: 1em;
+	font-size: 2em;
+}
+
+button:hover {
+	-webkit-animation: button-hover 1s;
+	background-color: #404040;
+	cursor: pointer;
+}
+
+input[type="text"] {
+	font-size: 2em;
+	border-top: 0.1em dashed #57b13b;
+	border-bottom: 0.1em dashed #57b13b;
+	border-right: none;
+	border-left: none;
+	padding: 0.4em;
+	text-align: center;
+	color: #57b13b;
+	font-weight: bold;
+}
+
+#container, #control {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#container {
+	margin-top: 8em;
+}
+
+#control {
+	margin-left: 10vw;
+	margin-top: calc(11em);
+}
+
+::selection {
+  background: black;
+}
+::-moz-selection {
+  background: black;
+}
