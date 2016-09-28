@@ -118,7 +118,7 @@ function Machine(param) {
 		currentMachine = m
 		var old_grid = cloneArray(m.grid)
 		var chosen = new Array(m.grid.length)
-		chosen.fill(false)
+		for (var i = 0; i < m.grid.length; i++) chosen[i] = false
 
 		for (var i = 0; i < m.grid.length; i++)
 			m.grid[i].moving = false
