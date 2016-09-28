@@ -137,7 +137,8 @@ function after() {
 
 	components = []
 	var colors = new Array(field.grid.length)
-	colors.fill(0) // 0 is white, 1 is gray, 2 is black
+	for (var i = 0; i < colors.length; i++) colors[i] = 0
+	// 0 is white, 1 is gray, 2 is black
 	for (var i = 0; i < field.grid.length; i++)
 		if (field.grid[i].color == 1)
 			if (colors[i] == 0) {
@@ -382,7 +383,7 @@ function dfs(colors, v) {
 */
 function weight(n, x, y) {
 	var koefs = new Array(8)
-	koefs.fill(-1)
+	for (var i = 0; i < 8; i++) koefs[i] = -1
 	var poses =
 	[
 		[x - 1, y - 1, 0], [x, y - 1, 1], [x + 1, y - 1, 2],
