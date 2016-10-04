@@ -1,3 +1,8 @@
+/*
+* @version 1.1
+* IE10 support added
+*/
+
 function Machine(param) {
 	var canvas = document.createElement('canvas')
     var div = document.getElementById(param.container)
